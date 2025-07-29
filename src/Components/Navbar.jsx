@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Home, Sun, Phone, FileText } from 'lucide-react';
+import { Home, Sun, Phone } from 'lucide-react';
 import clsx from 'clsx';
 
 const navItems = [
   { to: '/', icon: <Home size={18} />, label: 'Home' },
-  { to: '/services', icon: <Sun size={18} />, label: 'Services' },
-  { to: '/contact', icon: <Phone size={18} />, label: 'Contact' },
-  { to: '/cv', icon: <FileText size={18} />, label: 'CV' },
+  { to: '/Product', icon: <Sun size={18} />, label: 'Product' },
+  { to: '/Contact', icon: <Phone size={18} />, label: 'Contact' },
 ];
 
 export default function Navbar() {
@@ -32,10 +31,10 @@ export default function Navbar() {
 
         {/* CTA Button */}
         <Link
-          to="/blog"
+          to="/Teflon"
           className="bg-yellow-500 text-white px-4 py-1.5 rounded-full ml-3 text-sm font-semibold hover:bg-yellow-600 transition"
         >
-          Solar Blog
+          Teflon Solar
         </Link>
       </div>
     </nav>

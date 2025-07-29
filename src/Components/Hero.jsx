@@ -22,7 +22,7 @@ function Hero() {
 
       {/* CTA Bubble Button */}
       <button className="absolute bottom-10 right-10 z-10 bg-white text-black px-6 py-3 rounded-full shadow-lg flex items-center gap-2 hover:scale-105 transition">
-        Join us in Powering Your Home
+        Join us power your own house
         <ArrowRight size={18} />
       </button>
     </section>
