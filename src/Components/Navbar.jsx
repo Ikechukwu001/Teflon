@@ -13,17 +13,18 @@ export default function Navbar() {
   const location = useLocation();
 
   return (
-    <nav className="flex justify-center py-8">
-      <div className="bg-white border border-gray-200 shadow-lg rounded-full flex items-center px-4 py-4 gap-3">
+    <nav className="flex justify-center py-6 bg-[#fffef8]">
+      <div className="bg-white border border-yellow-50 shadow-md rounded-full flex items-center px-5 py-3 gap-4">
         {/* Icon Links */}
         {navItems.map((item, idx) => (
           <Link
             key={idx}
             to={item.to}
             className={clsx(
-              'text-gray-600 p-2 rounded-full hover:bg-gray-100 transition-all',
-              location.pathname === item.to && 'bg-gray-200 text-black'
+              'text-gray-500 p-2 rounded-full hover:bg-yellow-100 transition-all',
+              location.pathname === item.to && 'bg-yellow-200 text-yellow-700'
             )}
+            title={item.label}
           >
             {item.icon}
           </Link>
@@ -32,7 +33,7 @@ export default function Navbar() {
         {/* CTA Button */}
         <Link
           to="/Teflon"
-          className="bg-yellow-500 text-white px-4 py-1.5 rounded-full ml-3 text-sm font-semibold hover:bg-yellow-600 transition"
+          className="bg-green-600 text-white px-4 py-1.5 rounded-full ml-3 text-sm font-semibold hover:bg-green-700 transition"
         >
           Teflon Solar
         </Link>
