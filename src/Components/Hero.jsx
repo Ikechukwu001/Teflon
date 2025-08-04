@@ -1,5 +1,5 @@
 import React from 'react';
-import heroBg from '../assets/Teflon.jpg'
+import heroBg from '../assets/Teflon.png'
 import { ArrowRight } from 'lucide-react';
 
 function Hero() {

@@ -4,9 +4,10 @@ import { setPageMeta } from '../seo';
 import Hero from '../Components/Hero';
 import SolarCalculator from '../Components/SolarCalculator';
 import Footer from '../Components/Footer';
-import TeflonLogo from '../assets/TefonLogo.jpg';
+import TeflonLogo from '../assets/TefonLogo.png';
 import Bulb from '../assets/BUlb.jpg';
 import FadeInWhenVisible from '../Components/FadeInWhenVisible';
+
 
 function Home() {
   useEffect(() => {
@@ -17,7 +18,7 @@ function Home() {
   }, []);
 
   return (
-    <main className="bg-gradient-to-br from-[#fffef8] via-[#fefce8] to-[#fcfacc] text-gray-800">
+    <main className="bg-white text-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24 pt-8 pb-16">
         
         {/* Hero */}
